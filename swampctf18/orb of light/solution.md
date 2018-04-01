@@ -17,7 +17,7 @@ After unzipping, [secret_message.txt](challenge/Orb_of_Light_p1_secret_message/s
 ```
 gh2AtAht hS zRfghLz ftg otozofE WRAtTz
 
-"WhdAa gh2fAt hS gf9G AEEozAht
+"WhdAa gh2fAt hS gf9G AEEozAht ...
 ```
 
 This makes it a likely substitution cipher.
@@ -27,7 +27,7 @@ Passing the garbled text through quipqiup.com gives:
 ```
 do2InIon oF sHadoWs and unusuaL THInNs
 
-"To?Ii do2aIn oF da9D ILLusIon 
+"To?Ii do2aIn oF da9D ILLusIon ...
 ```
 
 Alright, slightly better but still not perfect. Quipquip seems to ignore substituting numbers and is neither case sensitive. At this point, manually assigning the remaining letters with a python script helps reach a 100% sensible english output:
@@ -115,8 +115,8 @@ Instinctively, the first task would be to solve all tuples in the large file for
 From the [story so far](challenge/Orb_of_Light_p2_SaveCormyr/story.txt), it suggests that the 5 values in a question tuple correspond to:
 
 ```python
-(-804.1791798191063, 207.81139231370207, 100.82602527985537, 1.080075821502287, 		2.9241898277603076)
-# ^  x coordinate    ^ y coordinate      ^ speed             ^ angle above horizontal   ^ bearing
+(-804.1791798191063, 207.81139231370207, 100.82602527985537, 1.080075821502287,        2.9241898277603076)
+# ^  x coordinate    ^ y coordinate      ^ speed             ^ angle above horizontal  ^ bearing
 ```
 
 And each tuple describes a 'spell' projectile that is cast. Gut feeling tells me that the projectiles obey gravity and takes a parabolic path through the air, of which a solution tuple (`(22, 37)` in this case) would be the coordinate where it hits the ground again.
@@ -175,11 +175,13 @@ flag.save('orb3_flag.png')
 ```
 
 Result:
+
 ![Theres something there!](orb3_flag.png "There's something there!")
 
 Hmm, I can make out something in that top left corner too. With a bit of Photoshop magic:
 
 Result:
+
 ![Orb3 Flag](orb3_flag_hicontrast.png "Orb3 Flag")
 
 `flag{out_oF_th3_5h4dow5_1nto_th3_light}`
