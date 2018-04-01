@@ -123,13 +123,15 @@ bytestring = "".join(bytestring)
 
 4. Decode it into ascii.
 
-```
+```python
 def binToAscii(x):
 	return "".join([chr(int(x[i:i+8],2)) for i in range(0,len(x),8)])
 
 print binToAscii(bytestring)
 # You have done well in Pagoda 1 flag{bmV4dDogU3RyYW5nZXIgVGhpbmdz}<
 ```
+
+### [Full Solution](pagoda1_solve.py)
 
 ## Pagoda 2 (500)
 
@@ -158,6 +160,8 @@ for chunk_id in range((len(data[0])-1)/12):
 print binToAscii(bytestring)
 # The secrets of the second Pagoda are yours flag{QnJvdGhlciBvZiBOdXdh}
 ```
+
+### [Full Solution](pagoda2_solve.py)
 
 ## Pagoda 3 (500)
 
@@ -200,3 +204,5 @@ for chunk_id in range((len(data[0])-1)/12):
 print binToAscii(bytestring)
 # K'an above, Li below flag{QWxyZWFkeSBGb3JkaW5n}3
 ```
+
+### [Full Solution](pagoda3_solve.py)
