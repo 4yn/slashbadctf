@@ -33,7 +33,11 @@ Integer values of bytes are found, thus pointing towards an encoding pattern ali
 
 ## Trigrams and Hexagrams
 
-Looking forward, Pagoda3.txt mentions 'the eight trigrams'. Some google-fu teaches us that [Trigrams](https://en.wikipedia.org/wiki/Bagua) consist three lines which are either solid or broken into two pieces, and are later stacked on top of each other. Their counterparts are [Hexagrams](https://en.wikipedia.org/wiki/Hexagram_(I_Ching)), which involves ordered pairings of the eight trigrams to form stacks of 6 lines, creating 64 unique symbols. Consulting their order, each hexagram was historically given a [value](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching) from 1 to 64 under the ["King Wen" sequence](https://en.wikipedia.org/wiki/King_Wen_sequence), with the zero spot being taken by a yin-yang symbol.
+Looking forward, [Pagoda3.txt](challenge/Pagoda3.txt) mentions :
+
+> "He who devised the eight trigrams."
+
+Some google-fu teaches us that [Trigrams](https://en.wikipedia.org/wiki/Bagua) consist three lines which are either solid or broken into two pieces, and are later stacked on top of each other. Their counterparts are [Hexagrams](https://en.wikipedia.org/wiki/Hexagram_(I_Ching)), which involves ordered pairings of the eight trigrams to form stacks of 6 lines, creating 64 unique symbols. Consulting their order, each hexagram was historically given a [value](https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_Ching) from 1 to 64 under the ["King Wen" sequence](https://en.wikipedia.org/wiki/King_Wen_sequence), with the zero spot being taken by a yin-yang symbol.
 
 _Jackpot._
 
