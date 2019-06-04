@@ -31,6 +31,16 @@ Given the contstraits of the challenge, we are given a predefined signature (as 
 
 As the signing script provided shows us that no padding is applied and that "textbook" RSA signing is used in this system, we only need to find some `n` and `e` such that `pin = pow(signature, e, n)`.
 
+With some modulo arithmetic:
+
+```python
+pin = pow(signature, e, n)
+    = pow(signature, e) - k * n # Where k is a positive integer
+    = pow(signature, e) - n # Let k = 1
+
+n = pow(signature, e) - pin
+```
+
 We can naively generate a `n` from some `e` where `n = pow(signature, e) - pin`. The system will accept this keypair despite the comparable size of `n` relative to `pow(signature, e)`. By testing, any `e` larger than 3 will be accepted by the system.
 
 We can thus generate keypairs as such:
