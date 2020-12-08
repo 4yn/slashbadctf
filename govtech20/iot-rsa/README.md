@@ -1246,7 +1246,7 @@ with open('hardware-replay/replay.h', 'w') as f:
     f.write("\n".join(code))
 ```
 
-Now, we just need to program a microcontroller to replay packets to the LCD. Source code for this is available inside [`hardware-replay/hardware-replay.ino`](./hardware-replay/hardware-replay.ino). As a side note, I hard to lear now to [store arduino variables in ROM](https://www.arduino.cc/reference/en/language/variables/utilities/progmem/) to fit the entire payload inside the microcontroller - the payload would not fit into the [2.5kb of RAM available in an Ardunio Micro](https://store.arduino.cc/usa/arduino-micro) but it would work if we used the 32kb of ROM.
+Now, we just need to program a microcontroller to replay packets to the LCD. Source code for this is available inside [`hardware-replay/hardware-replay.ino`](./hardware-replay/hardware-replay.ino). As a side note, I had to learn how to [store arduino variables in ROM](https://www.arduino.cc/reference/en/language/variables/utilities/progmem/) to fit the entire payload inside the microcontroller - the payload would not fit into the [2.5kb of RAM available in an Ardunio Micro](https://store.arduino.cc/usa/arduino-micro) but it would work if we used the 32kb of ROM.
 
 ![Hardware replay](./images/hardware-replay.png)
 
