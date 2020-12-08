@@ -16,6 +16,8 @@ Respect to team SIG0CT that was the only category 2 team to solve during contest
 
 [A tl;dr solution is available here](#Summary)
 
+This writeup is also a IPython notebook, you can [run this locally](./iot-rsa-solution.ipynb).
+
 ## What we have to work with
 
 Login page has fields for "Username", "Password" and "Token", and nothing else too suspicious. The description sounds about right, we will need to derive a valid token / one time password to be keyed into this portal.
@@ -80,19 +82,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -167,19 +156,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -304,7 +280,7 @@ df['Time [s]'].plot.hist(bins=100, figsize=(10, 5))
 
 
 
-![png](output_19_1.png)
+![png](images/output_19_1.png)
 
 
 For this data capture, looks like there wasonly one I2C device at address `0x4E`. This packet received only write operations with only one byte of data per transmission, and received 1443 packets in total. This means that there aren't any other devices that sent or received data. Packets also seemed to be sent in "bursts" from 20 to 150 packets in one conversation. Now we can take these packets and try to decipher what text was shown on the LCD.
@@ -374,19 +350,6 @@ df.iloc[200:400]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -895,19 +858,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1016,19 +966,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1152,19 +1089,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
