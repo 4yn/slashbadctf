@@ -1,6 +1,6 @@
 # IOT RSA Token
 
-- [`iot-rsa-solution.md`](./iot-rsa-solution.ipynb) - Full writeup
+- [`iot-rsa-solution.md`](./iot-rsa-solution.md) - Full writeup
 - [`iot-rsa-solution.ipynb`](./iot-rsa-solution.ipynb) - Runnable Jupyter notebook writeup
 - [`capture.logicdata`](./capture.logicdata), [`rsa_token_setup.png`](./rsa_token_setup.png), [`welcome_msg.png`](./welcome_msg.png) & [`key.txt`](./key.txt) - Challenge files
 - [`capture.logicsettings`](./capture.logicsettings) - Saleae logic settings file for viewing `capture.logicdata`
