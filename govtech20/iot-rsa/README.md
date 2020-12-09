@@ -8,5 +8,4 @@
 - [`securid.c`](./securid.c) & [`compile-securid.c`](./compile-securid.c) - Original C implementation of RSA SecurID algorithm found from [seclists.org mailing list](https://seclists.org/bugtraq/2000/Dec/459)
 - [`libsecurid.c`](./libsecurid.c) & [`compile-libsecurid.c`](./compile-libsecurid.c) - C library version of RSA SecurID algorithm for python bindings
 - [`success.zip`](./success.zip) - Flag file obtained after submitting correct OTP to challenge site
-
-
+- [`hardware-replay`](./hardware-replay) - Arduino sketch for replaying the I2C messages to a physical 1602 LCD
