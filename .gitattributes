@@ -1,4 +1,1 @@
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.logicdata filter=lfs diff=lfs merge=lfs -text
 . !text !filter !merge !diff
