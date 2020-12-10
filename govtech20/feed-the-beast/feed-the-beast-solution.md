@@ -12,6 +12,8 @@ Web 2000, my team was the only solve in our category 😲🎉. This challenge in
 
 [A tl;dr is available below](#Summary)
 
+This writeup is also a IPython notebook, you can [run this locally](./feed-the-beast-solution.ipynb).
+
 ## What we have to work with
 
 Opening the web portal, we see a graph plotting some odd data, but also two more sub-pages to view.

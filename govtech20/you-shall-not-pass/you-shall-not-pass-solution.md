@@ -36,13 +36,13 @@ But how does the data get there? On inspecting the bottom of the page, we see th
 
 ![Broadcast script](./images/broadcast-script.png)
 
-From this, we can tell that every time we "broadcast" a message to the server, internall the web page will send that message to inside the message list `<iframe>` to be displayed there, using a call to `postMessage()`. We look into the `<iframe>` that contains [`/broadcasts`](./challenge/site/broadcasts) to inspect it further. Specifically, the message list loads a script [`frame.js`](./challenge/site/javascripts/frame.js) that:
+From this, we can tell that every time we "broadcast" a message to the server, internally the web page will send that message to inside the message list `<iframe>` to be displayed there, using a call to `postMessage()`. We look into the `<iframe>` that contains [`/broadcasts`](./challenge/site/broadcasts) to inspect it further. Specifically, the message list loads a script [`frame.js`](./challenge/site/javascripts/frame.js) that:
 - Receives messages from the parent window using the `receiveMessage()` handler
 - Checks if the origin of the sending page matches a regex that looks like the challenge server's origin
 - If the message text is `"on"` or` "off"`, updates the CSS of the message list
 - If the message text does not contain any of the characters ` '&|%@!#^`, a div tag is created and the message is written into the `.innerHTML` of the div. (That is why earlier messages that had spaces in them were not displayed!)
 
-This should ring an alarms in your head and tell you that this page may be vulnerable to XSS.
+This should ring an alarm in your head and tell you that this page may be vulnerable to XSS.
 
 Finally, the URL submission form seems to ping any links that we provide with headless chrome - which likely means that there is a bot visiting any links we provide and should be the victim of our XSS attack.
 
