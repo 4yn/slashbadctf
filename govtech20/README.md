@@ -2,9 +2,15 @@
 
 Participated as team Mushroom, we got 8th place in the Universities / Polytechnics category.
 
-![Scoreboard](./scoreboard.png)
+## Writeups
+
+- [Feed the Beast](./feed-the-beast/feed-the-beast-solution.md)
+- [You shall not pass!](./you-shall-not-pass/you-shall-not-pass-solution.md)
+- [IOT RSA](./iot-rsa/iot-rsa-solution.md)
 
 ## Solves
+
+![Scoreboard](./scoreboard.png)
 
 | Challenge                                       | Category                 | Points | Solved At                      |
 | ----------------------------------------------- | ------------------------ | ------ | ------------------------------ |
