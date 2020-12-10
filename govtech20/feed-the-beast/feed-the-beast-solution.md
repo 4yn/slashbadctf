@@ -113,7 +113,6 @@ $ ./server.py
     <!--- more stuff here -->
   </channel>
 </rss>
-...
 ```
 
 **Form data**
@@ -195,7 +194,7 @@ def dynamic_feed():
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <!--- jjinja template! -->
+    <!--- jinja template! -->
     <title>{{title | default("Title", true)}}</title>
     <!--- more stuff here -->
   </channel>
@@ -206,7 +205,7 @@ This way, all we need to do to change the feed title is to send a different link
 
 ![Automate demo](./images/automate-demo.png)
 
-And the best thing is, the `jjinja` template helps us escape any XML characters that need to be escaped!
+And the best thing is, the `jinja` template helps us escape any XML characters that need to be escaped!
 
 ![Automate escape](./images/automate-escape.png)
 
