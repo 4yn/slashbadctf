@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>{{title | default("Title", true)}}</title>
+    <language>en-us</language>
+    <atom:link href="http://localhost/feed" rel="self" type="application/rss+xml"/>
+    <link>http://localhost/feed"</link>
+    <description>"http://localhost/feed"</description>  
+  </channel>
+</rss>
