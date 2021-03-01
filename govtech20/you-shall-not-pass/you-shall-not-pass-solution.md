@@ -6,7 +6,7 @@
 >
 > [Web Portal](http://yhi8bpzolrog3yw17fe0wlwrnwllnhic.alttablabs.sg:41011/)
 
-Writeup by [@4yn](github.com/4yn)
+Writeup by [@4yn](https://github.com/4yn)
 
 Man this felt way more challenging than a 1k point challenge. This was the only web challenge that my team Mushroom was unable to complete during the CTF, as we were stumped by the CSP on this page. Nonetheless, this challenge was an interestng way to chain several different exploits together to get a full XSS.
 

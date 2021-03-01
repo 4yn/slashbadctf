@@ -8,7 +8,7 @@
 >
 > [Attachment: iot-challenge-5.zip](./challenge/iot-challenge-5.zip)
 
-Writeup by [@4yn](github.com/4yn)
+Writeup by [@4yn](https://github.com/4yn)
 
 My team Mushroom didn't complete this challenge while the CTF was running. I wasted 6 hours near the 20 hour mark of the CTF trying to decode I2C packets into character data by replaying the packets on an actual LCD, but I only managed to do so 2 hours before the contest was going to end, and that wasn't enough time to figure out the key generation algorithm. Here's the solution that was completed after the CTF had ended.
 
