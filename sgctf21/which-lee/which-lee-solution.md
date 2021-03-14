@@ -15,6 +15,12 @@
 > 
 > [Attachment: distrib.zip](./challenge/distrib.zip)
 
+Writeup by [@4yn](https://github.com/4yn), first blood solution 15 hours into the CTF.
+
+Ah, this brings me back to [babby's first ctf](https://ctftime.org/task/6760). Remember the times when people used keras without tensorflow?
+
+tl;dr: Neural net with `layer_norm` after `relu` can cause floating point error, use to defeat floating point math that blocks the flag.
+
 # Recon
 
 The challenge files have a specification and a trained modelfor a simple neural network image classifier, supposedly able to distinguish different pictures of people named 'Lee'. The `eval.py` script seems to accept a path as input and spits out the label of the supplied image. We also get access to a web page to upload our own images and run it against the classifier.
