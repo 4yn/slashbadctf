@@ -2,6 +2,15 @@
 
 Participated solo as `/bad`, got 9th place overall and 2nd in Singapore.
 
+## Writeups
+
+- [Cowsay as a Service](./cowsay-as-a-service/writeup.ipynb)
+- [Favorite Emojis](./favorite-emojis/writeup.ipynb)
+- [Swap on Curve](./swap-on-curve/writeup.ipynb)
+- [Two Rabin](./two-rabin/writeup.ipynb)
+- [Wonderful Hash](./wonderful-hash/writeup.ipynb)
+- [Other challenges](./others/writeups.ipynb)
+
 ## Solves
 
 | Challenge           | Category  | Score | Date                      |
