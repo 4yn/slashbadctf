@@ -10,3 +10,4 @@ Played solo as `slashbad`, solved 2 challenges.
 ## Writeups
 
 - [Cycling](cycling.ipynb)
+- [OCR](ocr.ipynb)
